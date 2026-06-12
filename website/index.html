@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScratchPad</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="cat.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-left">
+      <span class="nav-logo">⬡ ScratchPad</span>
+      <span class="nav-xp-label">STRENGTH</span>
+      <div class="nav-xp-bar"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#users">Users</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img src="cat.gif" alt="Scratchpad cat" class="hero-cat" />
+    <h1 class="hero-title">Scratchpad</h1>
+    <p class="hero-tagline">Store your secrets. Simply.</p>
+
+    <div class="section-icons">
+      <a href="#vision" class="section-icon-card card-vision">
+        <span class="icon-emoji">💡</span>
+        <span class="icon-label">Vision</span>
+      </a>
+      <a href="#users" class="section-icon-card card-users">
+        <span class="icon-emoji">👤</span>
+        <span class="icon-label">Users</span>
+      </a>
+      <a href="#features" class="section-icon-card card-features">
+        <span class="icon-emoji">⚙️</span>
+        <span class="icon-label">Features</span>
+      </a>
+      <a href="#team" class="section-icon-card card-team">
+        <span class="icon-emoji">🐾</span>
+        <span class="icon-label">Team</span>
+      </a>
+      <a href="#skills" class="section-icon-card card-skills">
+        <span class="icon-emoji">🧠</span>
+        <span class="icon-label">Skills</span>
+      </a>
+      <div class="hero-button-container">
+        <a href="https://code.cs.umanitoba.ca/3350/summer2026/a01-g12-passwordmanagerapp" target="_blank" class="hero-btn btn-white">
+          Gitlab
+        </a>
+        <a href="#demo" class="hero-btn btn-lime">
+          <span class="play-arrow">▶</span> Demo
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-cta">
+      SCROLL
+      <div class="scroll-arrow"></div>
+    </div>
+  </div>
+
+  <!-- VISION -->
+  <section id="vision">
+    <p class="section-eyebrow reveal">01 — Vision</p>
+    <h2 class="section-vision-title reveal">WHY SCRATCHPAD?</h2>
+    <div class="divider reveal"></div>
+    <p class="section-body reveal">
+      Passwords shouldn't live in a sticky note on your monitor, a notes app with zero encryption, or a browser that sells your data. Scratchpad is a local-first desktop password manager. It has no cloud, no subscriptions, no third-party servers. Your secrets stay on your machine, secure and within reach.
+    </p>
+    <p class = "tag reveal">Move cursor around</p>
+  </section>
+
+  <!-- TARGET USERS -->
+  <section id="users">
+    <p class="section-eyebrow reveal">02 — Target Users</p>
+    <h2 class="section-title reveal">Who It's For</h2>
+    <div class="divider reveal"></div>
+
+    <div class="users-canvas">
+
+      <div class="user-note-card card-orange">
+        <div class="note-pin"></div>
+        <p class="note-quote">"I keep resetting my school passwords because I can't remember them."</p>
+        <div class="note-meta">
+          <span class="note-emoji"></span>
+          <div>
+            <p class="note-name">Alex / Student</p>
+            <p class="note-tag">Privacy Conscious</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-note-card card-green">
+        <div class="note-pin"></div>
+        <p class="note-quote">"I manage lots of accounts and need one place to keep track of them."</p>
+        <div class="note-meta">
+          <span class="note-emoji"></span>
+          <div>
+            <p class="note-name">Sarah / Developer</p>
+            <p class="note-tag">Local-First Advocate</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-note-card card-blue">
+        <div class="note-pin"></div>
+        <p class="note-quote">ScratchPad is built for anyone who struggles to keep track of multiple usernames and passwords. Whether you're a student managing school accounts, a professional handling work logins, or an everyday user with numerous online services, ScratchPad provides a simple, organized place to store and access your credentials locally.</p>
+        <div class="note-meta">
+          <span class="note-emoji"></span>
+          <div>
+            <p class="note-name">ScratchPad Team</p>
+            <p class="note-tag">SOFTWARE ENGINEERING</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="user-note-card card-pin">
+        <div class="note-pin"></div>
+        <p class="note-quote">"I just want a simple app that lets me find my login information quickly"</p>
+        <div class="note-meta">
+          <span class="note-emoji"></span>
+          <div>
+            <p class="note-name">Mark / Everyday User</p>
+            <p class="note-tag">Zero Cloud Trust</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <p class="section-eyebrow reveal">03 — Features</p>
+    <h2 class="section-features-title reveal">What It Does</h2>
+    <div class="divider reveal"></div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <span class="feature-icon">🔒</span>
+        <p class="feature-name">Secure Storage</p>
+        <p class="feature-desc">All credentials are stored locally inside a database. Your vault never touches the internet.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">🔍</span>
+        <p class="feature-name">Instant Search</p>
+        <p class="feature-desc">Filter through your accounts in real time. No lag, no cloud round-trips.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">👁️</span>
+        <p class="feature-name">Show / Hide Toggle</p>
+        <p class="feature-desc">Reveal passwords on demand with a single click. Hidden by default, always.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">📋</span>
+        <p class="feature-name">One-Click Copy</p>
+        <p class="feature-desc">Copy usernames and passwords to clipboard without ever revealing them on screen.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">✏️</span>
+        <p class="feature-name">Edit & Delete</p>
+        <p class="feature-desc">Update credentials inline in the dashboard. Changes are saved immediately.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">🐱</span>
+        <p class="feature-name">Local-First</p>
+        <p class="feature-desc">No account creation. No sync. No vendor lock-in. Just you and your vault.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+  <p class="team-eyebrow reveal">04 — Team</p>
+  <h2 class="team-title reveal">BEHIND THE PAD</h2>
+  <div class="team-divider reveal"></div>
+
+  <div class="team-grid">
+
+    <div class="card-container">
+      <div class="team-card" onclick="this.classList.toggle('is-flipped')">
+        <div class="card-side card-front">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-logo">✦✦✦</div>
+            <div class="badge-access">ALL-ACCESS</div>
+            <div class="badge-meta">
+              <span>SOFTWARE ENGINEERING</span>
+              <span>SUMMER 2026</span>
+            </div>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-body">
+            <p class="team-handle">@FULLSTACK</p>
+            <h3 class="team-name">Garrett Malenko</h3>
+          </div>
+          <div class="badge-footer">
+            <a href="https://www.linkedin.com/in/garrett-malenko-316929331/" class="badge-linkedin-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+              <svg class="badge-linkedin-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <div class="badge-details">
+              <p class="badge-label">ROLE</p>
+              <p class="team-role">Fullstack Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-side card-back">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-access">SECURITY VERIFIED</div>
+            <p class="badge-label">CONTRIBUTIONS</p>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-extended-info">
+            <p><strong>Iteration 0</strong> — Took charge on initializing the project repository, README and gradle config. Added features, tasks and user stories.</p>
+            <p><strong>Iteration 1</strong> — Set up the main dashboard UI frame and unit tests, developed full vertical slices for account adding, set up validation logic and did code reviews. Created the architecture diagram. Contributed to the worksheet.</p>
+            <p><strong>Iteration 2</strong> — Refactored AppStart, password validation and associated tests and error messages. Added a class to collect exception messages, developed a full vertical slice of the search bar. Set up Mockito for unit tests, addressed tech debt and did code reviews. Updated the architecture diagram. Contributed to the worksheet.</p>
+            <p><strong>Iteration 3</strong> — I acted as a codebase maintainer by completing many refactoring tasks to eliminate code smells and reduce technical debt. Assisted in design and development of the sorting strategy. Updated the architecture diagram and readme. Did code reviews and co-authored end-to-end tests with Daniel. Contributed to the worksheet.</p>
+            <p><strong>Technical Skills Developed</strong> — One of the most valuable technical skills I learned this term was how to write proper tests. I gained an understanding of the roles and tradeoffs of unit, integration and end-to-end tests, as well as when to use stubs, fakes and mocks to build deterministic, isolated test suites. Also, working firsthand with n-tier architecture gave me insight into system design and how to enforce clear boundaries and separation of concerns.</p>
+          </div>
+          <div class="badge-footer" style="flex-direction: column; gap: 4px;">
+            <button class="read-more-btn" onclick="openModal(event, this)">[ VIEW FULL DETAILS ]</button>
+            <p class="badge-label" style="width: 100%; text-align: center; margin: 0;">GitLab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="team-card" onclick="this.classList.toggle('is-flipped')">
+        <div class="card-side card-front">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-logo">✦✦✦</div>
+            <div class="badge-access">ALL-ACCESS</div>
+            <div class="badge-meta">
+              <span>SOFTWARE ENGINEERING</span>
+              <span>SUMMER 2026</span>
+            </div>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-body">
+            <p class="team-handle">@BACKEND/UI</p>
+            <h3 class="team-name">Mikhail Vasilev</h3>
+          </div>
+          <div class="badge-footer">
+            <a href="https://www.linkedin.com/in/mikevms/" class="badge-linkedin-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+              <svg class="badge-linkedin-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <div class="badge-details">
+              <p class="badge-label">ROLE</p>
+              <p class="team-role">Backend/UI Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-side card-back">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-access">SECURITY VERIFIED</div>
+            <p class="badge-label">CONTRIBUTIONS</p>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-extended-info">
+            <p><strong>Iteration 0</strong> — Contributed to user stories and features, set up the time estimates for issues. </p>
+            <p><strong>Iteration 1</strong> — Implemented the clipboard features, worked on the final code review and sorting features.</p>
+            <p><strong>Iteration 2</strong> — Worked on the complete UI code refactoring and finished the first version of sorting logic.</p>
+            <p><strong>Iteration 3</strong> —  Implemented password generation and cleaned the code formatting and comment.</p>
+            <p><strong>Technical Skills Developed</strong> — One of the most valuable technical skills I developed this term was working within an Agile workflow end-to-end, from writing user stories and estimating issues to delivering features across iterative sprints. Implementing clipboard integration and password generation logic gave me hands-on experience with system APIs and algorithmic thinking. I also deepened my understanding of software quality through participating in code reviews and taking ownership of a full UI refactoring, which taught me how to identify structural inefficiencies and improve readability without breaking existing functionality. Finally, designing and refining sorting logic across multiple iterations gave me insight into the importance of incremental development and revisiting earlier work with fresh perspective.</p>
+          </div>
+          <div class="badge-footer" style="flex-direction: column; gap: 4px;">
+            <button class="read-more-btn" onclick="openModal(event, this)">[ VIEW FULL DETAILS ]</button>
+            <p class="badge-label" style="width: 100%; text-align: center; margin: 0;">GitLab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="team-card" onclick="this.classList.toggle('is-flipped')">
+        <div class="card-side card-front">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-logo">✦✦✦</div>
+            <div class="badge-access">ALL-ACCESS</div>
+            <div class="badge-meta">
+              <span>SOFTWARE ENGINEERING</span>
+              <span>SUMMER 2026</span>
+            </div>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-body">
+            <p class="team-handle">@UI/UX</p>
+            <h3 class="team-name">Rimsha Irfan</h3>
+          </div>
+          <div class="badge-footer">
+            <a href="www.linkedin.com/in/rimshairfann" class="badge-linkedin-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+              <svg class="badge-linkedin-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <div class="badge-details">
+              <p class="badge-label">ROLE</p>
+              <p class="team-role">UI/UX Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-side card-back">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-access">SECURITY VERIFIED</div>
+            <p class="badge-label">CONTRIBUTIONS</p>
+          </div>
+          <div class="badge-divider"></div>
+          <<div class="badge-extended-info">
+            <p><strong>Iteration 0</strong> — Wrote the README and retrospective.</p>
+            <p><strong>Iteration 1</strong> — Designed the login view, created the logo, and set up the presentation layer file structure.</p>
+            <p><strong>Iteration 2</strong> — Built and styled the dashboard, restructured and cleaned up the CSS file, and created the add account view.</p>
+            <p><strong>Iteration 3</strong> — Removed the old login flow, refactored the dashboard view, restyled the entire UI, recorded and edited the demo video, and built the project website. Also managed worksheet submissions and restructuring throughout all iterations.</p>
+            <p><strong>Technical Skills Developed</strong> — One of the most valuable technical skills I developed this term was translating design intent into functional UI. Starting from logo creation and login view design in early iterations, to building and styling a full dashboard with a structured CSS architecture. Taking ownership of a complete UI restyle in the final iteration taught me how to approach visual consistency at scale and refactor presentation logic without disrupting existing functionality. I also gained experience in front-end file organization, maintaining a clean and scalable presentation layer across a growing codebase. Beyond the UI work, producing and editing the demo video and building the project website gave me practical exposure to technical communication and project documentation. Managing worksheet submissions across all iterations further developed my organizational skills within an Agile team setting.</p>
+          </div>
+          <div class="badge-footer" style="flex-direction: column; gap: 4px;">
+            <button class="read-more-btn" onclick="openModal(event, this)">[ VIEW FULL DETAILS ]</button>
+            <p class="badge-label" style="width: 100%; text-align: center; margin: 0;">GitLab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="team-card" onclick="this.classList.toggle('is-flipped')">
+        <div class="card-side card-front">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-logo">✦✦✦</div>
+            <div class="badge-access">ALL-ACCESS</div>
+            <div class="badge-meta">
+              <span>SOFTWARE ENGINEERING</span>
+              <span>SUMMER 2026</span>
+            </div>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-body">
+            <p class="team-handle">@BACKEND</p>
+            <h3 class="team-name">Ben Purvis</h3>
+          </div>
+          <div class="badge-footer">
+            <a href="https://www.linkedin.com/in/ben-purvis-1a3b51365/" class="badge-linkedin-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+              <svg class="badge-linkedin-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <div class="badge-details">
+              <p class="badge-label">ROLE</p>
+              <p class="team-role">Backend Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-side card-back">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-access">SECURITY VERIFIED</div>
+            <p class="badge-label">CONTRIBUTIONS</p>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-extended-info">
+            <p><strong>Iteration 0</strong> — Set up the repository for our group. Planned our persistence interface, so we could start working immedietly when itteration 1 started. Helped plan our fetures and user stories. </p>
+            <p><strong>Iteration 1</strong> — Implemented the entire persistence layer, made IAccountRepository and FakeAccountRepository. Created the Account model that represents an account that is saved into the app. Implemented the Delete button, and the service asociated with it. </p>
+            <p><strong>Iteration 2</strong> — Designed the database schema Implemented SQLCipher (SQLite + AES encryption) database and created an AccountRepositroy that works for any passowrd protected relational database Worked on integration tests </p>
+            <p><strong>Iteration 3</strong> — Refactored the way the system handles sorting to decouple the sorting modes from the sorting service. Helped improve and add more unit tests. Fixed Database issues. Setup a builder pattern for the Account model to improve code readiablility.</p>
+            <p><strong>Technical Skills Developed</strong> — One of the most valuable technical skills I developed this term was designing and implementing a full persistence layer from the ground up. Starting with a planned interface and fake repository for early development, then replacing it with a real encrypted database using SQLCipher (SQLite with AES encryption). This gave me deep insight into repository pattern design, interface-driven development, and how to write persistence code that is swappable and testable. Working on integration tests alongside the database implementation also taught me how to verify that system layers communicate correctly under real conditions. In later iterations, refactoring the sorting logic to decouple sorting modes from the service layer and introducing a builder pattern for the Account model gave me hands-on experience with software design principles like separation of concerns and readability-focused architecture.</p>
+          </div>
+          <div class="badge-footer" style="flex-direction: column; gap: 4px;">
+            <button class="read-more-btn" onclick="openModal(event, this)">[ VIEW FULL DETAILS ]</button>
+            <p class="badge-label" style="width: 100%; text-align: center; margin: 0;">GitLab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="team-card" onclick="this.classList.toggle('is-flipped')">
+        <div class="card-side card-front">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-logo">✦✦✦</div>
+            <div class="badge-access">ALL-ACCESS</div>
+            <div class="badge-meta">
+              <span>SOFTWARE ENGINEERING</span>
+              <span>SUMMER 2026</span>
+            </div>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-body">
+            <p class="team-handle">@TESTING</p>
+            <h3 class="team-name">Daniel Ng</h3>
+          </div>
+          <div class="badge-footer">
+            <a href="https://www.linkedin.com/in/danielng07/" class="badge-linkedin-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+              <svg class="badge-linkedin-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <div class="badge-details">
+              <p class="badge-label">ROLE</p>
+              <p class="team-role">QA Automation</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-side card-back">
+          <div class="badge-slot"></div>
+          <div class="badge-header">
+            <div class="badge-access">SECURITY VERIFIED</div>
+            <p class="badge-label">CONTRIBUTIONS</p>
+          </div>
+          <div class="badge-divider"></div>
+          <div class="badge-extended-info">
+            <p><strong>Iteration 0</strong> — Contributed feature ideas and user stories during project planning; served as project coordinator to align team direction.</p>
+            <p><strong>Iteration 1</strong> — Tracked time and estimates across all issues; developed and tested branches #29 and #31; resolved issue #9 per feedback; completed Worksheet 1.</p>
+            <p><strong>Iteration 2</strong> — Refactored broad exception handling and stack traces from the UI (#50); fixed password length validation bypass on edit (#46); implemented most recently accessed (#31) and most used (#29) account features; completed Worksheet 2.</p>
+            <p><strong>Iteration 3</strong> — Authored two end-to-end tests with Garrett; implemented delete confirmation dialog (#42); patched copy-from-revealed-field bug (#10); completed Worksheet 3 and produced the demo video.</p>
+            <p><strong>Technical Skills Developed</strong> — One of the most valuable technical skills I developed this term was writing end-to-end tests, which gave me a practical understanding of how to verify user-facing behaviour across the full application stack. Fixing bugs like the password length validation bypass and the copy-from-revealed-field issue sharpened my ability to trace subtle logic errors and think critically about edge cases in user input handling. Refactoring broad exception handling out of the UI layer deepened my understanding of separation of concerns and how error management should be structured across application tiers. Implementing features like most recently accessed and most used accounts also gave me experience designing lightweight usage-tracking logic within an existing architecture. Beyond the technical work, tracking time and estimates across all issues throughout the project developed my awareness of scope and effort, and producing the demo video gave me practice communicating technical work clearly to an outside audience.</p>
+          </div>
+          <div class="badge-footer" style="flex-direction: column; gap: 4px;">
+            <button class="read-more-btn" onclick="openModal(event, this)">[ VIEW FULL DETAILS ]</button>
+            <p class="badge-label" style="width: 100%; text-align: center; margin: 0;">GitLab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="teamModal" class="modalteam-backdrop" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation();">
+      <button class="modalteam-close" onclick="closeModal()">&times;</button>
+      <div class="modal-header-info">
+        <span class="modal-handle" id="modalHandle">@HANDLE</span>
+        <h3 class="modal-name" id="modalName">Name Placeholder</h3>
+        <p class="modal-role" id="modalRole">Role Placeholder</p>
+      </div>
+      <div class="modal-divider"></div>
+      <div class="modalteam-body" id="modalBody">
+        </div>
+    </div>
+  </div>
+</section>
+
+  <!-- DEMO -->
+  <section id="demo">
+    <p class="section-eyebrow reveal">05 — Demo</p>
+    <h2 class="section-vision-title reveal">Design.Develop.Demonstrate.</h2>
+    <div class="divider reveal"></div>
+    <div class="video-wrapper reveal">
+    <iframe
+      src="https://www.youtube.com/embed/twTrut86_o8"
+      title="Development Demo Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+  </section>
+
+   <!-- DEMO -->
+  <section id="reflection-section">
+    <p class="section-eyebrow reveal">06 — Reflect</p>
+  <h1 class="reflection-title">Development Reflection</h1>
+
+  <div class="reflection-container">
+
+    <div class="reflect-card card-pink">
+      <div class="card-header">
+        <span class="card-num">01.</span>
+        <h3>The Pivot</h3>
+      </div>
+      <div class="card-content">
+        <p class="highlight-text"><strong>Major Issue:</strong> It's always an OCP violation.</p>
+        <p class="sub-text"><strong>The Issue:</strong> Our business-layer implementation of sorting accounts by a specified field. In our first iteration, the presentation layer passed strings to the business layer which routed them through a switch statement to apply the corresponding sorting logic. However, as we learned about code smells and design patterns we realized this was a significant OCP violation, because adding a new sorting mode required modifying both the frontend constants and the backend switch statement.</p>
+        <p class="sub-text"><strong>The Change:</strong> We refactored the system to use to an enum-driven strategy and registry design pattern. The registry simply maps each sorting enum to a specific Account wrapper class that implements Comparable. Now, the sorting function simply retrieves the appropriate wrapper from the registry to wrap each Account, and invokes Collections.sort() on the list of wrapped Accounts. This addressed the OCP violation as now adding a new sorting criteria only requires creating a new wrapper class and registering it, leaving the core sorting logic untouched.</p>
+      </div>
+    </div>
+
+    <div class="reflect-card card-lime">
+      <div class="card-header">
+        <span class="card-num">02.</span>
+        <h3>The Triumphs</h3>
+      </div>
+      <div class="card-content">
+        <p class="highlight-text"><strong>Successes:</strong></p>
+        <p class="sub-text"><strong>1.</strong> Our team held regular group meetings each week to discuss tasks and planning for each iteration. During these meetings, we reviewed grader feedback and balanced related refactoring tasks alongside new feature development. These regular meetings kept us on track, gave us space to share any blockers we might have been facing, and contributed to maintaining a clear line of communication about the general direction of the project.</p>
+        <p class="sub-text"><strong>2.</strong> Our team maintained a healthy culture that translated into a willingness to refactor combined with open communication, which encouraged continuous improvements to existing code. Throughout all iterations, we were able to openly discuss design decisions, acknowledge mistakes and process feedback well. For example, we recognized that our scope was too large through iteration 1 and iteration 2 as we added many new features without fully considering the design decisions behind them. As a result, iteration 3 consisted mostly of polishing and refactoring in all layers which led us to have a final product that we are proud of.</p>
+      </div>
+    </div>
+
+    <div class="reflect-card card-yellow">
+      <div class="card-header">
+        <span class="card-num">03.</span>
+        <h3>The Rejects</h3>
+      </div>
+      <div class="card-content">
+        <p class="highlight-text"><strong>Failures:</strong></p>
+        <p class="sub-text"><strong>1.</strong> Due to the amount of feedback we received, balancing new feature development and refactoring was a constant challenge. This sometimes resulted in complex merge requests. If a new feature interacted with an existing class that was undergoing a refactor, resolving conflicts became a major bottleneck. To mitigate this, we should have broken down refactoring tasks into smaller sub-tasks and completed them earlier in the sprint, minimizing architectural differences between our feature branches and the main codebase.</p>
+        <p class="sub-text"><strong>2.</strong> Underestimated timelines in the compressed course schedule led to rushed code reviews. Consequently, hard-coded strings, styling differences, minor bugs and technical debt slipped into the main codebase unnoticed. This intensified with larger commits, due to the Law of Triviality. With more time, we would have preferred to have a number of people reviewing code which would allow us to nitpick styling and code smells. This would have resulted in less refactoring and clean-up on the final day of iteration 3. Ultimately, we experienced the saying “Ask a programmer to review 10 lines of code, they’ll find 10 issues. Ask a programmer to review 500 lines of code, they’ll say ‘looks good.’”</p>
+      </div>
+    </div>
+
+    <div class="reflect-card card-white">
+      <div class="card-header">
+        <span class="card-num">04.</span>
+        <h3>Retrospective</h3>
+      </div>
+      <div class="card-content">
+        <p class="highlight-text"><strong>Changes:</strong> What would we change next time?</p>
+        <p class="sub-text"><strong>1.</strong> Reviewing our iteration 1 submission and feedback, we realized that we focused too much on feature breadth rather than architectural depth and robustness. By implementing too many features at once, we ended up with a semi-functional system that lacked a solid foundation. This resulted in us having to do many rounds of refactoring in future iterations. </p>
+        <p class="sub-text"><strong>2.</strong> For example, in iteration 1 we had all CRUD functionality, alongside account sorting. AccountService handled both persistence workflows and sorting logic, which violated the Single Responsibility Principle. This was a clear example of disregarding proper separation of concerns across our service layer. If we were to start over, we would instead narrow our initial scope and focus on implementing a small set of features to a high standard that would minimize future refactors.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ 
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="skills-bg-text">
+      <span>S</span><span>K</span><span>I</span><span>L</span><span>L</span><span>S</span>
+    </div>
+
+    <div class="skills-drop-area" id="skillsArea">
+      <div class="skill-pill">E2E Tests</div>
+      <div class="skill-pill">Scene Builder</div>
+      <div class="skill-pill">SOLID Principles</div>
+      <div class="skill-pill">CSS Specificity</div>
+      <div class="skill-pill">Unit Tests</div>
+      <div class="skill-pill">Integration Tests</div>
+      <div class="skill-pill">MVC Architecture</div>
+      <div class="skill-pill">GridPane Layout</div>
+      <div class="skill-pill">Design Patterns</div>
+      <div class="skill-pill">Gradle & JavaFX</div>
+      <div class="skill-pill">Agile</div>
+      <div class="skill-pill">GitLab</div>
+      <div class="skill-pill">Dependency Injections</div>
+      <div class="skill-pill">Test-Driven Development</div>
+    </div>
+  </section>
+      <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-title-row">
+            <span class="modal-status">● Open</span>
+            <button class="modal-close" id="modalClose">✕</button>
+          </div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-meta">Issue opened by <strong>Scratchpad Team</strong></p>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc" id="modalDesc"></p>
+        </div>
+        <div class="modal-sidebar">
+          <div class="modal-field">
+            <span class="modal-label">Assignee</span>
+            <span class="modal-value" id="modalAssignee">None</span>
+          </div>
+          <div class="modal-field">
+            <span class="modal-label">Label</span>
+            <span class="modal-tag" id="modalLabel"></span>
+          </div>
+          <div class="modal-field">
+            <span class="modal-label">Milestone</span>
+            <span class="modal-value" id = "modalMile"></span>
+          </div>
+          <div class="modal-field">
+            <span class="modal-label">Status</span>
+            <span class="modal-value">✓ Implemented</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-marquee">
+      <span>SCRATCHPAD &nbsp;·&nbsp; SOFTWARE ENGINEERING 3350 &nbsp;·&nbsp; UNIVERSITY OF MANITOBA &nbsp;·&nbsp; SUMMER 2026 &nbsp;·&nbsp; SCRATCHPAD &nbsp;·&nbsp; SOFTWARE ENGINEERING 3350 &nbsp;·&nbsp; UNIVERSITY OF MANITOBA &nbsp;·&nbsp; SUMMER 2026 &nbsp;·&nbsp;</span>
+      <span>SCRATCHPAD &nbsp;·&nbsp; SOFTWARE ENGINEERING 3350 &nbsp;·&nbsp; UNIVERSITY OF MANITOBA &nbsp;·&nbsp; SUMMER 2026 &nbsp;·&nbsp; SCRATCHPAD &nbsp;·&nbsp; SOFTWARE ENGINEERING 3350 &nbsp;·&nbsp; UNIVERSITY OF MANITOBA &nbsp;·&nbsp; SUMMER 2026 &nbsp;·&nbsp;</span>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Floating particles
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 28; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.bottom = '-10px';
+      p.style.animationDuration = (8 + Math.random() * 14) + 's';
+      p.style.animationDelay = (Math.random() * 12) + 's';
+      p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+      p.style.opacity = 0;
+      container.appendChild(p);
+    }
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const scrollTop  = window.scrollY;
+      const docHeight  = document.documentElement.scrollHeight - window.innerHeight;
+      const pct        = Math.round((scrollTop / docHeight) * 100);
+      document.querySelector('.nav-xp-bar::after'); // can't set pseudoelement directly
+      // use a CSS variable instead
+      document.documentElement.style.setProperty('--scroll-pct', pct + '%');
+    });
+  </script>
+
+  <script>
+    // Vision cursor trail
+    const words = ['no cloud', 'offline', 'private', 'no ads', 'yours alone', 'local', 'no sync', 'secure', 'simple','hidden password'];
+    const pastels = [
+      { bg: '#ffd6e0', color: '#5a2a35' },
+      { bg: '#d6f0ff', color: '#1a3a4a' },
+      { bg: '#d6ffd9', color: '#1a3a1f' },
+      { bg: '#fff3d6', color: '#4a3200' },
+      { bg: '#e8d6ff', color: '#2e1a4a' },
+      { bg: '#ffd6f5', color: '#4a1a3f' },
+      { bg: '#d6fff5', color: '#1a3a30' },
+    ];
+    let wordIndex = 0, lastX = 0, lastY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      const vision = document.getElementById('vision');
+      const rect = vision.getBoundingClientRect();
+      if (!(rect.top < window.innerHeight && rect.bottom > 0)) return;
+
+      const dx = e.clientX - lastX, dy = e.clientY - lastY;
+      if (Math.sqrt(dx * dx + dy * dy) < 10) return;
+      lastX = e.clientX; lastY = e.clientY;
+
+      const pastel = pastels[Math.floor(Math.random() * pastels.length)];
+      const el = document.createElement('span');
+      el.textContent = words[wordIndex % words.length];
+      wordIndex++;
+
+      el.style.cssText = `
+        position: fixed;
+        left: ${e.clientX}px;
+        top: ${e.clientY}px;
+        transform: translate(-50%, -50%);
+        font-family: 'Space Mono', monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.1em;
+        color: ${pastel.color};
+        background: ${pastel.bg};
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        pointer-events: none;
+        z-index: 9999;
+        white-space: nowrap;
+        transition: opacity 1.5s ease, transform 1.5s ease;
+      `;
+      document.body.appendChild(el);
+      requestAnimationFrame(() => {
+        el.style.opacity = '0';
+        el.style.transform = `translate(-50%, -60px)`;
+      });
+      setTimeout(() => el.remove(), 1600);
+    });
+
+    // Feature card modal
+    const modalData = {
+      'Secure Storage': {
+        desc: 'Credentials are stored locally in a SQLite database, keeping your data on your device without relying on cloud storage.',
+        label: 'security',
+        assignee: 'Group 12',
+        milestone: 'Iteration 3'
+      },
+      'Instant Search': {
+        desc: 'Filter through all saved accounts in real time as you type. Results update instantly with no network requests everything runs locally.',
+        label: 'feature',
+        assignee: 'Group 12',
+        milestone: 'Iteration 2'
+      },
+      'Show / Hide Toggle': {
+        desc: 'Passwords are hidden by default. A single click reveals the plain text. Designed to prevent shoulder surfing without adding friction.',
+        label: 'ux',
+        assignee: 'Group 12',
+        milestone: 'Iteration 2'
+      },
+      'One-Click Copy': {
+        desc: 'Copy usernames and passwords to your clipboard instantly without exposing them on screen. Clipboard is cleared after 30 seconds.',
+        label: 'feature',
+        assignee: 'Group 12',
+        milestone: 'Iteration 2'
+      },
+      'Edit & Delete': {
+        desc: 'Update any credential inline directly from the dashboard. Changes persist immediately to the local vault file.',
+        label: 'feature',
+        assignee: 'Group 12',
+        milestone: 'Iteration 1'
+      },
+      'Local-First': {
+        desc: 'No account required. No internet connection needed. No vendor lock-in. Your vault is a single encrypted file on your own machine.',
+        label: 'architecture',
+        assignee: 'Group 12',
+        milestone: 'Iteration 0'
+      },
+    };
+
+    const overlay   = document.getElementById('modalOverlay');
+    const modalClose = document.getElementById('modalClose');
+
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const name = card.querySelector('.feature-name').textContent;
+        const data = modalData[name];
+        document.getElementById('modalTitle').textContent    = name;
+        document.getElementById('modalDesc').textContent     = data.desc;
+        document.getElementById('modalLabel').textContent    = data.label;
+        document.getElementById('modalAssignee').textContent = data.assignee;
+        document.getElementById('modalMile').textContent = data.milestone;
+        overlay.classList.add('open');
+      });
+    });
+
+    modalClose.addEventListener('click', () => overlay.classList.remove('open'));
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) overlay.classList.remove('open');
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script>
+  window.addEventListener('load', () => {
+
+    // 1. Matter.js Initialization
+    const { Engine, Runner, Bodies, Composite, Mouse, MouseConstraint, Events } = Matter;
+
+    const engine = Engine.create({
+        gravity: { y: 1, x: 0 }
+    });
+
+    const runner = Runner.create();
+    const container = document.getElementById('skillsArea');
+
+    const width = container.clientWidth || window.innerWidth;
+    const height = container.clientHeight || 700;
+
+    // 2. Outer Boundaries
+    const thickness = 60;
+    const ground = Bodies.rectangle(width / 2, height + thickness / 2, width, thickness, { isStatic: true });
+    const leftWall = Bodies.rectangle(-thickness / 2, height / 2, thickness, height, { isStatic: true });
+    const rightWall = Bodies.rectangle(width + thickness / 2, height / 2, thickness, height, { isStatic: true });
+
+    Composite.add(engine.world, [ground, leftWall, rightWall]);
+
+    // 3. Generate Individual Physics Platforms for Every Single Letter
+    const letters = document.querySelectorAll('.skills-bg-text span');
+    const containerRect = container.getBoundingClientRect();
+
+    letters.forEach(letter => {
+        const letterRect = letter.getBoundingClientRect();
+
+        const letterWidth = letterRect.width;
+        // Adjust height slightly so things look structurally natural resting on top of the text canvas
+        const letterHeight = letterRect.height * 0.75;
+
+        // Center calculation for each individual character relative to parent container
+        const letterX = (letterRect.left - containerRect.left) + (letterWidth / 2);
+        const letterY = (letterRect.top - containerRect.top) + (letterHeight / 2) + 15;
+
+        const letterPlatform = Bodies.rectangle(letterX, letterY, letterWidth, letterHeight, {
+            isStatic: true,
+            friction: 0.1,
+            render: { visible: false } // Invisible physics boxes matching letter shapes
+        });
+
+        Composite.add(engine.world, letterPlatform);
+    });
+
+    // 4. Map HTML Skill Pills to Physics Bodies
+    const pills = document.querySelectorAll('.skill-pill');
+    const physicsPills = [];
+
+    pills.forEach((pill, index) => {
+        const rect = pill.getBoundingClientRect();
+        const pillWidth = rect.width || 130;
+        const pillHeight = rect.height || 45;
+
+        // Spawn spread out across the middle section so they drop into the letters nicely
+        const randomX = (width * 0.25) + (Math.random() * (width * 0.5));
+        // Stagger drops smoothly so they don't block each other instantly
+        const randomY = -80 - (index * 60);
+
+        const body = Bodies.rectangle(randomX, randomY, pillWidth, pillHeight, {
+            chamfer: { radius: pillHeight / 2 },
+            restitution: 0.3, // Soft spring bounce
+            friction: 0.12,  // Enough friction to allow stacking on top of letters
+            frictionAir: 0.01
+        });
+
+        body.domNode = pill;
+        physicsPills.push(body);
+        Composite.add(engine.world, body);
+    });
+
+    // 5. Mouse Interaction Controls
+    const mouse = Mouse.create(container);
+    mouse.element.removeEventListener("mousewheel", mouse.mousewheel);
+    mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
+
+    const mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+            stiffness: 0.2,
+            render: { visible: false }
+        }
+    });
+
+    Composite.add(engine.world, mouseConstraint);
+
+    // 6. Frame Updates: Render HTML positions based on Engine updates
+    Events.on(runner, "afterTick", () => {
+        physicsPills.forEach(body => {
+            const { x, y } = body.position;
+            const angle = body.angle;
+
+            body.domNode.style.left = `${x - body.domNode.offsetWidth / 2}px`;
+            body.domNode.style.top = `${y - body.domNode.offsetHeight / 2}px`;
+            body.domNode.style.transform = `rotate(${angle}rad)`;
+        });
+    });
+
+    Runner.run(runner, engine);
+  });
+
+    function openModal(event, buttonElement) {
+    // 1. Critical step: Stop the click from traveling up to '.team-card',
+    // which prevents it from triggering the unexpected card-flip effect.
+    event.stopPropagation();
+
+    // 2. Find the container structures relative to this exact clicked card instance
+    const cardElement = buttonElement.closest('.team-card');
+
+    // 3. Extract identity items from the front/back components of the dynamic card element
+    const name = cardElement.querySelector('.team-name').innerText;
+    const handle = cardElement.querySelector('.team-handle').innerText;
+    const role = cardElement.querySelector('.team-role').innerText;
+    const extendedInfoHtml = cardElement.querySelector('.badge-extended-info').innerHTML;
+
+    // 4. Bind the extracted attributes right into our central template modal elements
+    document.getElementById('modalName').innerText = name;
+    document.getElementById('modalHandle').innerText = handle;
+    document.getElementById('modalRole').innerText = role;
+    document.getElementById('modalBody').innerHTML = extendedInfoHtml;
+
+    // 5. Present the modal setup neatly on screen
+    const modal = document.getElementById('teamModal');
+    modal.classList.add('is-active');
+    document.body.style.overflow = 'hidden'; // Freeze site layout tracking mechanics cleanly
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('teamModal');
+    modal.classList.remove('is-active');
+    document.body.style.overflow = ''; // Re-enable window layout scrolling tracking parameters
+  }
+
+  // Optional Escape-key close feature
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.user-note-card');
+    const canvas = document.querySelector('.users-canvas');
+    let highestZIndex = 10;
+
+    cards.forEach(card => {
+      let isDragging = false;
+      let offsetX = 0;
+      let offsetY = 0;
+
+      card.addEventListener('mousedown', (e) => {
+        // Step to highest layer on interaction
+        highestZIndex++;
+        card.style.zIndex = highestZIndex;
+
+        isDragging = true;
+        card.style.transition = 'none'; // Snappy performance while tracking mouse pointer
+
+        // Calculate click anchor delta inside the card component
+        const rect = card.getBoundingClientRect();
+        offsetX = e.clientX - rect.left;
+        offsetY = e.clientY - rect.top;
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+
+        const canvasRect = canvas.getBoundingClientRect();
+
+        // Find targeted new coordinate relative to the box layout container
+        let newLeft = e.clientX - canvasRect.left - offsetX;
+        let newTop = e.clientY - canvasRect.top - offsetY;
+
+        // Container boundary restrictions
+        const maxLeft = canvasRect.width - card.offsetWidth;
+        const maxTop = canvasRect.height - card.offsetHeight;
+
+        if (newLeft < 0) newLeft = 0;
+        if (newLeft > maxLeft) newLeft = maxLeft;
+        if (newTop < 0) newTop = 0;
+        if (newTop > maxTop) newTop = maxTop;
+
+        card.style.left = `${newLeft}px`;
+        card.style.top = `${newTop}px`;
+      });
+
+      document.addEventListener('mouseup', () => {
+        if (isDragging) {
+          isDragging = false;
+          card.style.transition = 'transform 0.15s ease-out, box-shadow 0.15s ease-out';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
