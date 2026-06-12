@@ -1,0 +1,84 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'jacoco'
+}
+
+version = '0.0.1'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Mockito
+    testImplementation 'org.mockito:mockito-core:5.12.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.12.0'
+
+    // JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // Icons
+    implementation 'org.kordamp.ikonli:ikonli-javafx:12.3.1'
+    implementation 'org.kordamp.ikonli:ikonli-fontawesome5-pack:12.3.1'
+
+    // Persistence
+    implementation 'io.github.willena:sqlite-jdbc:3.51.2.0'
+
+    // End-to-end testing
+    testImplementation 'org.testfx:testfx-core:4.0.18'
+    testImplementation 'org.testfx:testfx-junit5:4.0.18'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+
+}
+
+application {
+    mainClass = 'application.AppStart'
+}
+
+javafx {
+    version = "21.0.2"
+    modules = [ 'javafx.controls' ]
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jacoco {
+    toolVersion = "0.8.11"
+}
+
+jacocoTestReport {
+    dependsOn test
+
+    reports {
+        html.required = true
+        xml.required = false
+        csv.required = false
+    }
+
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: [
+                'presentation/**',  // UI not tested
+                'domain/**',        // simple data structures
+                'application/**'    // wiring / bootstrapping
+            ])
+        }))
+    }
+}
+
+/**
+ * Optional convenience command
+ */
+tasks.register("coverage") {
+    dependsOn("test", "jacocoTestReport")
+}
